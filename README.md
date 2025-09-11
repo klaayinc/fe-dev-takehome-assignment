@@ -4,7 +4,7 @@ The task is to use this code to create a chat application that uses the provided
 
 The goal is to have a friendly UX and UI experience when creating new conversations and writing and reading messages.
 
-We will review your code collaboratively during the technical interview. 
+We will review your code collaboratively during the technical interview.
 Please send us your code and instructions on running it at least the day before your interview.
 
 ## Requirements
@@ -34,4 +34,4 @@ Run the development server:
 npm run dev
 ```
 
-And access it on http://localhost:3000 and the API on http://localhost:3001/docs
+And access it on http://localhost:9292 and the API on http://localhost:9293/docs

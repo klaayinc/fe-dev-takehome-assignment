@@ -1,7 +1,7 @@
 const express = require("express");
 const crypto = require("crypto");
 const app = express();
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 9293;
 
 // Middleware: Set JSON:API Content-Type for all responses
 app.use((req, res, next) => {
