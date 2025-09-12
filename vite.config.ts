@@ -5,6 +5,18 @@ export default defineConfig({
   plugins: [vue()],
   server: {
     port: 9292,
+    proxy: {
+      "/api": {
+        target: "http://localhost:9293",
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, ""),
+      },
+      "/cable": {
+        target: "ws://localhost:9293",
+        changeOrigin: true,
+        ws: true,
+      },
+    },
   },
   test: {
     environment: "jsdom",
